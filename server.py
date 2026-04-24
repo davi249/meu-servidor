@@ -37,4 +37,4 @@ def get_payload(session_id: str, authorization: str = Header(None)):
     return {'payload': payload_enc, 'perm': PERM}
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=443, ssl_keyfile="key.pem", ssl_certfile="cert.pem")
+    uvicorn.run(app, host="0.0.0.0", port=10000)
